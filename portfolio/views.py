@@ -13,7 +13,7 @@ from django.core.mail import EmailMessage
 
 
 def home(request):
-    return render(request,'home.html')
+    return render(request,'home.html',{'linkedin_url': 'https://www.linkedin.com/in/muthusaravanan-v','git_url':'https://github.com/Muthusaravanan88','mail_url':'mailto:muthusaravanan9256@gmail.com'})
 
 def contact_email(request):
     if request.method == 'POST':
